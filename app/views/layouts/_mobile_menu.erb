@@ -1,0 +1,60 @@
+<!-- Button HTML (to Trigger Modal) -->
+<style>
+    #menu-opener {
+        position:fixed;
+        bottom: 20px;
+        right: 20px;
+    } 
+    .menu-wrapper {
+        background-color: #2196F3;
+        text-decoration: none;
+        color: white !important;
+        border-radius: 100px;
+        padding: 18px 20px;
+        z-index: 999;
+    }
+    
+    .menu-text {
+        text-decoration: none;
+        color: white !important;
+    }
+       
+    .socials a {
+        background-color: #2196F3; 
+        padding: 20px;
+        border-radius: 60px;
+        color: white;
+        width: 50px;
+        height: 50px;
+        margin-left: 12px;
+    }
+    
+</style>
+  <a  role="button" class="" data-toggle="modal" href="#myModal">
+   <div class="menu-wrapper visible-xs" id="menu-opener">
+      <i class="fa fa-bars fa-2x menu-text"  aria-hidden="true" ></i> 
+  </div>
+</a>
+<!-- Modal HTML -->
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Contact Information</h4>
+            </div>
+            <div class="modal-body">
+             <h4>116-16 Javaica Ave, Queens, 11418</h4>
+              <p class="map-images">
+<iframe align="center" frameborder="0" height="250" src="https://www.google.com/maps/embed/v1/place?q=119-16-Jamaica-Ave-Queens-11418&key=AIzaSyBiR-34zMVUJrXA95ZbH0wbNInn7lDsOhc" style="border:0" width="100%"></iframe>
+</p>
+            </div>
+            <div class="modal-footer item-desc">
+            <a class="btn btn-primary" style="width: 100%; margins: auto !important;" href="mailto:webuygoodsny@gmail.com">webuygoodsny@gmail.com</a>
+            </div>
+            <div class="modal-footer item-desc">
+                <a type="button" class="btn btn-primary" style="width: 100%; margins: auto;" href="tel:+1-718-846-1600">Call : +1 (718) 846-1600</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %meta{:content => @meta_desc, :name => "description"}/
+    %meta{:content => @meta_keys, :name => "keywords"}/
+    %meta{:content => "", :name => "author"}/
+    %title
+      = @title
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+    %script{:href =>"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js", :type=>"text/javascript"}
+    %link{:rel => :stylesheet, :type => :"text/css", :href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"}
+    / HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    / WARNING: Respond.js doesn't work if you view the page via file://
+    /[if lt IE 9]
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  %body
+    = render '/layouts/mobile_menu'
+    = render '/layouts/navbar'
+    .container
+      .row
+        .col-md-8
+          = yield
+        = render '/layouts/sidebars'
+    =render '/layouts/footer'

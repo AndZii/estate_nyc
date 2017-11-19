@@ -1,0 +1,15 @@
+%h2
+  %span 
+    = @post.title
+%p.lead
+  %span 
+    = @post.second_title
+%hr/
+%img.img-responsive{:alt => "", :src => "/#{@post.img_url}"}/
+%hr/
+%p.description-wrapper 
+  = @post.description
+%hr    
+%p 
+  = @post.post_body    
+%hr

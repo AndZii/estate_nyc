@@ -1,0 +1,31 @@
+/ Page Content
+/ Blog Entries Column
+%h1.page-header
+  = @index_page_header
+  %br
+  %small 
+    = @index_page_second_header
+  %hr/
+  .image-container
+    %img.img-responsive{:alt => "WEBUYGOODS.NYC - SELL - HANDBAGS - ELECTRONICS - CARS - GOLD - DIAMODS - HOUSES", :src => "/ph.jpg"}/ 
+/ First Blog Post
+- @posts.first(5).each do |post|
+  %h4
+    %span 
+      = post.title
+  %p.lead
+    %span 
+      = post.second_title
+  %hr/
+  .image-container
+    %img.img-responsive{:alt => "#{post.img_alt}", :src => "/#{post.img_url}"}/ 
+  %hr/
+  %p 
+    = post.description
+  = link_to "Read More", show_post_path(post.second_title) ,class: "btn btn-primary"
+%hr
+%h3
+  = @index_page_third_header
+%p
+  = "*If your have not found your item(s) or brand(s) here, don’t worry, just give us a call, we will do our best to help you. We Always Pay More!"
+  

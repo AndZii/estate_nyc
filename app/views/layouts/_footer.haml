@@ -1,0 +1,44 @@
+%hr
+%footer.footer-distributed
+  .footer-left
+    %h3
+      = @web_site_name
+    %p.footer-links
+      = link_to "Home", root_path
+      ·
+      = link_to "About", about_path
+      ·
+      = link_to 'Contacts', contacts_path
+    %p.footer-company-name WeBuyGoods.nyc © 2017
+  .footer-center
+    %div
+      %i.fa.fa-map-marker
+      %p
+        %a{:href => "https://www.google.com/maps/dir/Current+Location/119-16+Jamaica+Ave,+Jamaica,+NY+11418"} 
+          %span Queens: 119-16 Jamaica Ave
+          Jamaica, NY 11418
+    %div
+      %i.fa.fa-phone
+      %p
+        %a{:href => "tel:+1-718-846-1600"} 718.846.1600
+    %div
+      %i.fa.fa-envelope
+      %p
+        %a{:href => "mailto:webuygoodsny@gmail.com"} webuygoodsny@gmail.com
+  .footer-right
+    %p.footer-company-about
+      %span WeBuyGoods.nyc
+      We have the best customer service and always pay more, so if you have something to sell - we are your best choice.
+    .footer-icons
+      %a{:href => "https://www.facebook.com/webuygoodsnyc"}
+        %i.fa.fa-facebook
+      %a{:href => "https://plus.google.com/106507584776418285314/about"}
+        %i.fa.fa-google-plus
+      %a{:href => "https://www.instagram.com/webuygoodsnyc/"}
+        %i.fa.fa-instagram
+      %a{:href => "https://twitter.com/webuygoodsnyc"}
+        %i.fa.fa-twitter
+/ jQuery
+%script{:src => "js/jquery.js"}
+/ Bootstrap Core JavaScript
+%script{:src => "js/bootstrap.min.js"}

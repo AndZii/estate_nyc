@@ -1,0 +1,50 @@
+/ Blog Sidebar Widgets Column
+.col-md-4
+  / Blog Search Well
+  .well.hidden-xs
+    %h4 Contacts:
+    %h5 
+      %a{:href => "tel:+1-718-846-1600"} 718.846.1600
+    %h5 
+      %a{:href => "mailto:webuygoodsny@gmail.com"} webuygoodsny@gmail.com
+    / /.input-group
+  / Blog Categories Well
+  .well
+    .row
+      .col-lg-12.text-center
+        %h3 WANTED:
+      .col-lg-6.col-xs-6
+        = image_tag "/wanted-3.jpeg", class: "img-responsive"
+        %p.text-center Instruments
+      .col-lg-6.col-xs-6
+        = image_tag "/wanted-4.jpeg", class: "img-responsive"
+        %p.text-center Cameras
+  .well
+    %h4 Info:
+    .row
+      .col-lg-12
+        %ul.list-unstyled
+          - @posts.each do |post|
+            %li
+              = link_to "#{post.second_title}", show_post_path(post.second_title)
+        
+      / /.col-lg-6
+    / /.row
+  / Side Widget Well
+  .well
+    %h4 Send Message
+    = form_for(@message, url: message_path) do |form|
+      .form-group
+        = form.label :name
+        = form.text_field :name, class: "form-control"
+        = form.label :email
+        = form.text_field :email, class: "form-control"
+        = form.label :phone_number
+        = form.text_field :phone_number, class: "form-control"
+        = form.label :message
+        = form.text_area :message, class: "form-control"
+        %br
+        = recaptcha_tags site_key: "6LfVCioUAAAAADDSNExsleVTw67TweGZnyHcgyIK"
+        %hr
+        = form.button 'send message', class: "btn btn-info"
+/ /.row
