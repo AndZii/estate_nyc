@@ -6,7 +6,7 @@ class MainController < ApplicationController
   def define_vars
      @title = "We Buy Antiques & Estates | We Come to You & Pay Cash | NYC | Queens | New York "  
      @meta_keys = "Sell, Buy, Antiques, Estates, Arts, Currency, "
-     @web_site_name = "bullshit.gov"
+     @web_site_name = "meyerdunkin.com"
      @index_page_header = "New York Antiques and Currency Buyers" 
      @index_page_second_header = "We Come to You | We Pay Cash | Antiques | Collections | Estate Jewelry | Paintings | Currency etc.."
      @index_page_third_header = "We Buy Antiques & Estates"
