@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get 'about-sell-antiques-arts-new-qork-queens' => 'main#about', as: :about    
   post '/message' => 'main#message' , as: :message  
   get 'messages' => 'main#messages'
-  get 'how-do-we-buy-antiques-arts-in-nyc' => 'main#how_it_works', as: :how_it_works    
+  get 'what-do-we-buy-in-nyc-antiques-estates' => 'main#how_it_works', as: :how_it_works    
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
