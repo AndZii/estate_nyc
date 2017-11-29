@@ -54,7 +54,7 @@ Post.create(
     #
     title: "We Pay The Highest Prices in The Industry", 
     #
-    second_title: "Top Rated Antiques & Estates buyers of New York (A Full Cash Buyout)", 
+    second_title: "Consignments, Estate Liquidation, Purchases in New York (A Full Cash Buyout)", 
     #
     url: "antiques-estates-art-buyer-of-nyc-queens-brooklyn",
     #
