@@ -9,7 +9,8 @@
       = link_to "About", about_path
       ·
       = link_to 'Contacts', contacts_path
-    %p.footer-company-name WeBuyGoods.nyc © 2017
+    %p.footer-company-name 
+      = @web_site_name + "© 2017"
   .footer-center
     %div
       %i.fa.fa-map-marker
@@ -27,7 +28,8 @@
         %a{:href => "mailto:webuygoodsny@gmail.com"} webuygoodsny@gmail.com
   .footer-right
     %p.footer-company-about
-      %span WeBuyGoods.nyc
+      %span 
+        = @web_site_name
       We have the best customer service and always pay more, so if you have something to sell - we are your best choice.
     .footer-icons
       %a{:href => "https://www.facebook.com/webuygoodsnyc"}

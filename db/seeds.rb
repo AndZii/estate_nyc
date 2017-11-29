@@ -16,7 +16,7 @@ Post.create(
     #
     title: "Consignments, Estate Liquidation, Purchases etc...", 
     #
-    second_title: "Top Rated Buyer of Antiques & Estates in NYC", 
+    second_title: "Top Rated Buyer of Antiques & Estates in New York", 
     #
     url: "estate-liquidation-consignments-nyc-new-york",
     #
@@ -38,7 +38,7 @@ Post.create(
     #
     title: "We buy single antiques items and whole collections", 
     #
-    second_title: "Top Rated Buyer of Antiques & Estates in NYC", 
+    second_title: "Sell your single antiques items and whole collections in New York", 
     #
     url: "antiques-estates-buyer-of-nyc-new-york",
     #
@@ -54,7 +54,7 @@ Post.create(
     #
     title: "We Pay The Highest Prices in The Industry", 
     #
-    second_title: "Top Rated Antiques & Estates | A Full Cash Buyout", 
+    second_title: "Top Rated Antiques & Estates buyers of New York (A Full Cash Buyout)", 
     #
     url: "antiques-estates-art-buyer-of-nyc-queens-brooklyn",
     #
@@ -70,7 +70,7 @@ Post.create(
     #
     title: "We buy national U.S. bank notes", 
     #
-    second_title: "Looking to sell national U.S. currency, we are here for you!", 
+    second_title: "Sell National U.S. currency in New York", 
     #
     url: "sell-national-currency-nyc-queens-brooklyn",
     #
